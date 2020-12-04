@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="background-color: #EEC3AF">
+<div class="container">
+	<h1 style="margin-bottom: 20px">MEMOS</h1> 
+	
+    {{ data|safe }}
+</div>  
+<div class="container">
+	<h1 style="margin-bottom: 20px">GRAPH ACCORDING TO MONTHWISE</h1>
+                <div class="row text-center" id="item_list">
+                    <div class="col-sm-6">
+                        
+                            <div class="thumbnail">
+                                <img src="{{url_for('static',filename='memo.png')}}" alt="" height="300" width="400" >
+                                <div class="caption">
+                                    <p>GRAPH OF MEMOCYCLE(MONTHWISE)</p>
+                                   
+                                </div>
+                            </div> 
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6">
+                             <center>
+                            <div class="thumbnail">
+                                <img src="{{url_for('static',filename='challan.png')}}" alt="" height="300" width="400" >
+                                <div class="caption">
+                                    <p>GRAPH OF CHALLAN CYCLE(MONTHWISE)</p>
+                                    
+                                </div>
+                            </div> 
+                            </center>
+                        </a>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+                    
+
+<div class="container">
+                    <div class="col-sm-4 rounded mx-auto d-block">
+                        
+                            <div class="thumbnail">
+                            	<center></center>
+                                <img src="{{url_for('static',filename='ses.png')}}" alt="" height="300" width="400">
+                                <div class="caption">
+                                    
+                                    <p>GRAPH OF SES CYCLE(MONTHWISE)</p>
+                                </div>
+                                </center>
+
+                            </div>
+                        </a>
+                    </div>
+
+	
+</div>
+
+
+
+
+
+
+
+
+<div style="padding-bottom: 20px" class="container">
+	<h1 style="margin-bottom: 20px">GRAPH OF AVERAGE OF CYCLES</h1>
+                    <div class="col-sm-4 ">
+                        
+                            <div class="thumbnail">
+                            	
+                                <img src="{{url_for('static',filename='average.png')}}" alt="" height="300" width="400" >
+                                <div class="caption">
+                                    
+                                    <p>AVERAGE OF CYCLES</p>
+                                </div>
+                                
+
+                            </div>
+                        </a>
+                    </div>
+
+	
+</div>
+
+
+
+
+
+
+
+
+<div class="container">
+	<h1 style="margin-bottom: 20px">FREQUENCY OF MEMO APPROVAL IN FINANCIAL YEAR</h1>
+                    <div class="col-sm-4 ">
+                        
+                            <div class="thumbnail">
+                            	
+                                <img src="{{url_for('static',filename='fin.png')}}" alt="" height="300" width="500" >
+                                <div class="caption">
+                                    
+                                    <p>FINACNCIAL YEAR</p>
+                                </div>
+                                
+
+                            </div>
+                        </a>
+                    </div>
+
+	
+</div>
+
+
+<div class="container">
+	<h1 style="margin-top: 30px margin-bottom: 20px">THE MAXIMUM TIME TAKING MEMOID</h1> 
+	
+    {{ data1|safe }}
+</div>  
+
+
+<div class="container">
+	<h1 style="margin-top: 30px margin-bottom: 20px">THE MINIMUM TIME TAKING MEMOID</h1> 
+	
+    {{ data2|safe }}
+</div>  
+
+
+
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
